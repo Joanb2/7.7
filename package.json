@@ -35,6 +35,7 @@
   },
   "devDependencies": {
     "autoprefixer-cli": "^1.0.0",
+    "bootstrap": "^4.0.0",
     "browser-sync": "^2.23.6",
     "globstar": "^1.0.0",
     "mkdirp": "^0.5.1",
