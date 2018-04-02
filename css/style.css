@@ -1,11 +1,13 @@
 * {
   box-sizing: border-box;
+  border: 1px solid black;
 }
 
 body {
   background-color: #fff;
   margin: 0;
   padding: 0;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .container {
@@ -15,36 +17,115 @@ body {
   padding: 0;
 }
 
-.hero {
+.jumbotron {
   width: 100%;
   height: 100vh;
-  background-image: url("https://images.pexels.com/photos/257897/pexels-photo-257897.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-image: url("https://images.pexels.com/photos/205505/pexels-photo-205505.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   background-size: cover;
   background-position: center;
   overflow: hidden;
 }
 
-.hero li {
+.jumbotron h3 {
+  color: #FED136;
+  font-family: 'Parisienne', cursive;
+  font-size: 35px;
+  padding-left: 30px;
+}
+
+.jumbotron ul {
+  margin: 0;
+  padding: 0;
+}
+
+.jumbotron ul li {
   display: inline-block;
   float: right;
 }
 
-.hero a {
+.jumbotron ul a {
   color: #fff;
   font-size: 20px;
   text-decoration: none;
   padding: 30px;
 }
 
-.hero a:hover {
+.jumbotron ul a:hover {
   color: #FED136;
 }
 
-.hero .head {
-  text-align: center;
+.jumbotron .title {
   color: #fff;
   width: 100%;
   height: 100%;
+}
+
+.jumbotron .title p, .jumbotron .title h1 {
+  text-align: center;
+  padding: 200px 0 5px 0;
+  font-size: 40px;
+}
+
+.jumbotron .title h1 {
+  padding: 10px 0 40px 0;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 65px;
+}
+
+.jumbotron .title button {
+  padding: 15px;
+  background-color: #FED136;
+  font-size: 20px;
+  border-radius: 0;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.jumbotron .title button:hover {
+  color: #fff;
+}
+
+.services {
+  padding: 20px;
+}
+
+.services h2, .services p, .services .jumbotron .title h1, .jumbotron .title .services h1 {
+  text-align: center;
+  color: #222222;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.services p, .services .jumbotron .title h1, .jumbotron .title .services h1 {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.icons {
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+.icons .icon-btn {
+  border-radius: 50%;
+  font-size: 50px;
+  border: 1px solid #FED136;
+  padding: 20px;
+  background: none;
+  color: #FED136;
+}
+
+.icons h4, .icons p, .icons .jumbotron .title h1, .jumbotron .title .icons h1 {
+  color: #222222;
+  font-size: 35px;
+  font-weight: 900;
+}
+
+.icons p, .icons .jumbotron .title h1, .jumbotron .title .icons h1 {
+  font-size: 20px;
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=style.css.map */

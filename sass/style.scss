@@ -4,12 +4,14 @@ $bg: #fff;
 
 * {
 	box-sizing: border-box;
+	border: 1px solid black;
 }
 
 body {
 	background-color: $bg;
 	margin: 0;
 	padding: 0;
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
 .container {
@@ -19,34 +21,114 @@ body {
 	padding: 0;
 }
 
-.hero {
+.jumbotron {
 	width: 100%;
 	height: 100vh;
-	background-image: url("https://images.pexels.com/photos/257897/pexels-photo-257897.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+	background-image: url("https://images.pexels.com/photos/205505/pexels-photo-205505.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
 	background-size: cover;
 	background-position: center;
 	overflow: hidden;
 
-	li {
-		display: inline-block;
-		float: right;
+	h3 {
+		color: $accent;
+		font-family: 'Parisienne', cursive;
+		font-size: 35px;
+		padding-left: 30px;
 	}
 
-	a {
-		color: $bg;
-		font-size: 20px;
-		text-decoration: none;
-		padding: 30px;
-		&:hover {
-			color: $accent;
+	ul {
+		margin: 0;
+		padding: 0;
+
+		li {
+			display: inline-block;
+			float: right;
+		}
+
+		a {
+			color: $bg;
+			font-size: 20px;
+			text-decoration: none;
+			padding: 30px;
+			&:hover {
+				color: $accent;
+			}
 		}
 	}
 
-	.head {
-		text-align: center;
+	.title {
 		color: $bg;
 		width: 100%;
 		height: 100%;
+			p {
+				text-align: center;
+				padding: 200px 0 5px 0;
+				font-size: 40px;
+
+			}
+
+			h1 {
+				@extend p;
+				padding: 10px 0 40px 0; 
+				text-transform: uppercase;
+				font-weight: 900;
+				font-size: 65px;
+			}
+			button {
+				padding: 15px;
+				background-color: $accent;
+				font-size: 20px;
+				border-radius: 0;
+				font-weight: bold;
+				text-transform: uppercase;
+				&:hover {
+					color: $bg;
+				}
+			} 
 	}
 
+}
+
+.services {
+	padding: 20px;
+
+	h2 {
+		text-align: center;
+		color: $basic;
+		font-size: 40px;
+		font-weight: 900;
+	}
+
+	p {
+		@extend h2;
+		font-size: 12px;
+		font-weight: normal;
+	}
+}
+
+.icons {
+	text-align: center;
+	margin: 0;
+	padding: 20px;
+
+	.icon-btn {
+		border-radius: 50%;
+		font-size: 50px;
+		border: 1px solid $accent;
+		padding: 20px;
+		background: none;
+		color: $accent;
+	} 
+
+	h4 {
+		color: $basic;
+		font-size: 35px;
+		font-weight: 900;
+	}
+
+	p {
+		@extend h4;
+		font-size: 20px;
+		font-weight: 400;
+	}
 }
