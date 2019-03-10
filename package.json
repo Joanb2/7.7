@@ -1,7 +1,6 @@
 {
   "name": "7.5",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "npm-run-all test:*",
@@ -17,7 +16,7 @@
     "build-dev:sass": "node-sass --output-style expanded --source-map true -o css sass",
     "watch": "npm-run-all build -p watch:*",
     "watch:sassprefixer": "onchange -d 100 sass/style.scss -- node-sass --output-style expanded --source-map true -o css sass -- autoprefixer-cli -o css/style.prefixed.css css/style.css",
-    "watch:browsersync": "node_modules/.bin/browser-sync start --server --files css/*.css *.html"
+    "watch:browsersync": "browser-sync start --server --files css/*.css *.html"
   },
   "repository": {
     "type": "git",
@@ -39,10 +38,11 @@
     "browser-sync": "^2.23.6",
     "globstar": "^1.0.0",
     "mkdirp": "^0.5.1",
-    "node-sass": "^4.8.3",
+    "node-sass": "^4.9.0",
     "npm-run-all": "^4.1.2",
     "nu-html-checker": "^0.1.0",
     "onchange": "^3.3.0",
     "rimraf": "^2.6.2"
-  }
+  },
+  "description": ""
 }

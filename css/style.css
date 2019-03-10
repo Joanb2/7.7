@@ -1,254 +1,139 @@
-/** {
-	box-sizing: border-box;
-	border: 1px solid black;
-}*/
-body {
-  background-color: #fff;
-  margin: 0;
-  padding: 0;
-  font-family: 'Source Sans Pro', sans-serif;
-}
+@keyframes moveRandom {}body { position: relative; background-color: #fff; margin: 0; padding: 0; font-family: 'Open Sans', sans-serif; }
 
-.container {
-  width: 100%;
-  height: auto;
-  margin: 0;
-  padding: 0;
-}
+.container { width: 100%; height: auto; margin: 0; padding: 0; }
 
-.jumbotron {
-  width: 100%;
-  height: 100vh;
-  background-image: url("https://images.pexels.com/photos/205505/pexels-photo-205505.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
-}
+.jumbotron { width: 100%; height: 100vh; background-color: #000; padding: 0; }
 
-.jumbotron h3 {
-  color: #FED136;
-  font-family: 'Parisienne', cursive;
-  font-size: 35px;
-  padding-left: 30px;
-}
+.jumbotron .blob { background: red; width: 50px; height: 50px; border-radius: 50%; position: absolute; }
 
-.jumbotron ul {
-  margin: 0;
-  padding: 0;
-}
+.jumbotron .blob.one { top: 50px; left: 50px; }
 
-.jumbotron ul li {
-  display: inline-block;
-  float: right;
-}
+.jumbotron .blob.two { top: 100px; left: 100px; }
 
-.jumbotron ul a {
-  color: #fff;
-  font-size: 20px;
-  text-decoration: none;
-  padding: 30px;
-}
+.jumbotron .blob.three { top: 150px; left: 150px; }
 
-.jumbotron ul a:hover {
-  color: #FED136;
-}
+.jumbotron nav { height: auto; display: -ms-flexbox; display: flex; -ms-flex-item-align: start; align-self: flex-start; z-index: 1; }
 
-.jumbotron .title {
-  color: #fff;
-  width: 100%;
-  height: 100%;
-}
+.jumbotron nav h3 { color: #FED136; font-family: 'Parisienne', cursive; font-size: 35px; padding-left: 30px; display: inline; }
 
-.jumbotron .title p, .jumbotron .title h1 {
-  text-align: center;
-  padding: 200px 0 5px 0;
-  font-size: 40px;
-}
+.jumbotron nav ul { display: inline; padding: 8px; width: 100%; line-height: 40px; }
 
-.jumbotron .title h1 {
-  padding: 10px 0 40px 0;
-  text-transform: uppercase;
-  font-weight: 900;
-  font-size: 65px;
-}
+.jumbotron nav ul li { display: inline; float: right; }
 
-.jumbotron .title button {
-  padding: 15px;
-  background-color: #FED136;
-  font-size: 20px;
-  border-radius: 0;
-  font-weight: bold;
-  text-transform: uppercase;
-}
+.jumbotron nav ul a { color: #fff; font-size: 12px; text-decoration: none; padding: 0 30px; }
 
-.jumbotron .title button:hover {
-  color: #fff;
-}
+.jumbotron nav ul a:hover { color: #FED136; }
 
-.services {
-  padding: 20px;
-}
+.jumbotron .title { color: #fff; width: 100%; height: 100%; z-index: 1; }
 
-.services h2 {
-  text-align: center;
-  color: #000;
-  font-size: 55px;
-  font-weight: 900;
-  text-transform: uppercase;
-}
+.jumbotron .title p { text-align: center; padding: 200px 0 5px 0; font-size: 40px; }
 
-.services p, .services .jumbotron .title h1, .jumbotron .title .services h1 {
-  font-size: 20px;
-  font-weight: normal;
-  text-align: center;
-  color: #000;
-}
+.jumbotron .title h1 { padding: 10px 0 40px 0; text-transform: uppercase; font-weight: 900; font-size: 45px; }
 
-.icons {
-  text-align: center;
-  margin: 0;
-  padding: 20px;
-}
+.jumbotron .title button { padding: 15px; background-color: #FED136; font-size: 20px; border-radius: 0; font-weight: bold; text-transform: uppercase; }
 
-.icons .icon-btn {
-  border-radius: 50%;
-  font-size: 50px;
-  border: 4px solid #FED136;
-  padding: 20px 30px;
-  background: none;
-  color: #FED136;
-}
+.jumbotron .title button:hover { color: #fff; }
 
-.icons h4, .icons p, .icons .jumbotron .title h1, .jumbotron .title .icons h1 {
-  color: #000;
-  font-size: 30px;
-  font-weight: 900;
-}
+.services { padding: 20px; }
 
-.icons p, .icons .jumbotron .title h1, .jumbotron .title .icons h1 {
-  font-size: 18px;
-  font-weight: 400;
-}
+.services h2 { text-align: center; color: #000; font-size: 45px; font-weight: 900; text-transform: uppercase; padding-top: 60px; }
 
-.portfolio {
-  margin: 40px 0;
-  padding: 20px;
-  background-color: #f7f7f7;
-}
+.services p { font-size: 20px; font-weight: normal; text-align: center; color: #000; padding: 20px; margin-bottom: 40px; }
 
-.portfolio h2 {
-  text-align: center;
-  color: #000;
-  font-size: 55px;
-  font-weight: 900;
-  text-transform: uppercase;
-}
+.icons { text-align: center; padding: 20px; }
 
-.portfolio P {
-  font-size: 20px;
-  font-weight: normal;
-  text-align: center;
-  color: #000;
-}
+.icons .icon-btn { border-radius: 50%; font-size: 35px; border: 4px solid #FED136; padding: 10px 20px; background: none; color: #FED136; }
 
-.portfolio .gallery {
-  width: 100%;
-}
+.icons h4, .icons p { color: #000; font-size: 25px; font-weight: 900; }
 
-.portfolio .gallery .photo {
-  margin-left: 5%;
-  background-color: #fff;
-}
+.icons p { font-size: 15px; font-weight: 400; }
 
-.portfolio .gallery .photo img, .portfolio .gallery .photo .aboutus .box, .aboutus .portfolio .gallery .photo .box {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-}
+.portfolio { margin: 40px 0; padding: 20px; background-color: #f7f7f7; }
 
-.portfolio .gallery .photo h4, .portfolio .gallery .photo .icons p, .icons .portfolio .gallery .photo p, .portfolio .gallery .photo .icons .jumbotron .title h1, .icons .jumbotron .title .portfolio .gallery .photo h1, .portfolio .gallery .photo .jumbotron .title .icons h1, .jumbotron .title .icons .portfolio .gallery .photo h1 {
-  font-weight: 900;
-  text-align: center;
-  font-size: 22px;
-  color: #000;
-  padding: 10px;
-}
+.portfolio h2 { text-align: center; color: #000; font-size: 45px; font-weight: 900; text-transform: uppercase; padding-top: 60px; }
 
-.portfolio .gallery .photo p, .portfolio .gallery .photo .jumbotron .title h1, .jumbotron .title .portfolio .gallery .photo h1 {
-  font-size: 15px;
-}
+.portfolio P { font-size: 20px; font-weight: normal; text-align: center; color: #000; padding: 20px; margin-bottom: 40px; }
 
-.aboutus {
-  padding: 35px;
-}
+.portfolio .gallery { width: 100%; }
 
-.aboutus h2 {
-  text-align: center;
-  color: #000;
-  font-size: 55px;
-  font-weight: 900;
-  text-transform: uppercase;
-}
+.portfolio .gallery .photo { margin-left: 5%; background-color: #fff; }
 
-.aboutus p, .aboutus .jumbotron .title h1, .jumbotron .title .aboutus h1 {
-  font-size: 20px;
-  font-weight: normal;
-  text-align: center;
-  color: #000;
-}
+.portfolio .gallery .photo img, .portfolio .gallery .photo .aboutus .box, .aboutus .portfolio .gallery .photo .box { width: 100%; height: 290px; -o-object-fit: cover; object-fit: cover; }
 
-.aboutus .row::before, .aboutus .row::after {
-  content: "";
-  display: table;
-}
+.portfolio .gallery .photo h4, .portfolio .gallery .photo .icons p, .icons .portfolio .gallery .photo p { font-weight: 900; text-align: center; font-size: 22px; color: #000; padding: 10px; }
 
-.aboutus .row::after {
-  clear: both;
-}
+.portfolio .gallery .photo p { font-size: 15px; }
 
-.aboutus .row img, .aboutus .row .box {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  border: 5px solid #bbb;
-  margin-top: 100px;
-}
+.aboutus { position: relative; }
 
-.aboutus .row h5 {
-  margin-top: 100px;
-  font-size: 18px;
-  font-weight: 900;
-  color: #000;
-}
+.aboutus h2 { text-align: center; color: #000; font-size: 45px; font-weight: 900; text-transform: uppercase; padding-top: 60px; }
 
-.aboutus .row p, .aboutus .row .jumbotron .title h1, .jumbotron .title .aboutus .row h1 {
-  font-size: 15px;
-}
+.aboutus p { font-size: 20px; font-weight: normal; text-align: center; color: #000; padding: 20px; margin-bottom: 40px; }
 
-.aboutus .box {
-  background-color: #FED136;
-}
+.aboutus .line { border-left: 5px solid #f0efef; height: 972px; position: absolute; left: 50%; bottom: 0px; z-index: -1; }
 
-.aboutus .box p, .aboutus .box .jumbotron .title h1, .jumbotron .title .aboutus .box h1 {
-  font-size: 25px;
-  font-weight: 900;
-  text-transform: uppercase;
-  padding-top: 25px;
-}
+.aboutus .row::before, .aboutus .row::after { content: ""; display: table; }
 
-.team h2 {
-  text-align: center;
-  color: #000;
-  font-size: 55px;
-  font-weight: 900;
-  text-transform: uppercase;
-}
+.aboutus .row::after { clear: both; }
 
-.team p, .team .jumbotron .title h1, .jumbotron .title .team h1 {
-  font-size: 20px;
-  font-weight: normal;
-  text-align: center;
-  color: #000;
-}
+.aboutus .row h5 { font-size: 18px; font-weight: 900; color: #000; }
 
-/*# sourceMappingURL=style.css.map */
+.aboutus .row .right { text-align: right; }
+
+.aboutus .row .right h5, .aboutus .row .right p { text-align: right; }
+
+.aboutus .row .left { text-align: left; }
+
+.aboutus .row .left h5, .aboutus .row .left p { text-align: left; }
+
+.aboutus .row img, .aboutus .row .box { width: 200px; height: 200px; border-radius: 50%; border: 5px solid #f0efef; margin: 50px 0; }
+
+.aboutus .box { background-color: #FED136; }
+
+.aboutus .box p { text-align: center; font-size: 25px; font-weight: 900; text-transform: uppercase; padding-top: 25px; }
+
+.practice { width: 100%; height: 100vh; border: 1px solid black; }
+
+.practice ul { display: block; width: 100%; text-align: center; border: 1px solid black; }
+
+.practice ul li { display: inline-block; padding: 25px; cursor: pointer; }
+
+.practice p { position: absolute; font-size: 40px; font-weight: 700; z-index: 1; cursor: pointer; }
+
+.practice p#right { right: 150px; }
+
+.practice p#left { left: 150px; }
+
+.practice .offers { width: 100px; height: 100px; position: relative; overflow: hidden; margin: 0 auto; z-index: -1; }
+
+.practice .offers .link-content { text-align: left; display: none; width: 300px; height: 100px; padding: 0; margin: 0; }
+
+.practice .offers .link-content .off { padding: 0; margin: 0; display: inline-block; width: 100px; height: 100px; background: red; }
+
+.team { padding: 20px; }
+
+.team h2 { text-align: center; color: #000; font-size: 45px; font-weight: 900; text-transform: uppercase; padding-top: 60px; }
+
+.team p { font-size: 20px; font-weight: normal; text-align: center; color: #000; padding: 20px; margin-bottom: 40px; }
+
+.team-photo .foto { width: 200px; height: 200px; }
+
+.team-photo .foto img, .team-photo .foto .aboutus .box, .aboutus .team-photo .foto .box { width: 200px; height: 100%; border-radius: 50%; -o-object-fit: cover; object-fit: cover; margin-left: 50px; }
+
+.team-photo h4, .team-photo .icons p, .icons .team-photo p { text-align: center; }
+
+.team-photo p { text-align: center; }
+
+.team-photo .icon-team { text-align: center; font-size: 25px; color: #000; }
+
+.contact { width: 100%; height: 600px; background-image: url("https://images.pexels.com/photos/41949/earth-earth-at-night-night-lights-41949.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"); }
+
+.contact h2 { text-align: center; color: #000; font-size: 45px; font-weight: 900; text-transform: uppercase; padding-top: 60px; padding-top: 60px; color: #fff; }
+
+.contact p { font-size: 20px; font-weight: normal; text-align: center; color: #000; padding: 20px; margin-bottom: 40px; color: #fff; }
+
+.contact input { height: 50px; width: 300px; }
+
+.contact textarea { width: 300px; border-radius: 3px; }
+
+.contact button { margin-left: 45%; background-color: #FED136; border: none; }
